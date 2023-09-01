@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, table, th, td {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #8CC63E;
+}
+
+tr:nth-child(even) {
+    background-color: #444444;
+}
+
+tr:nth-child(odd) {
+    background-color: #555555;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    background-color: #666666;
+    color: #ffffff;
+}
+
+input[type="reset"] {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #8CC63E;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #8CC63E;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #6D9743;
+}
+
+/* Landscape mode for mobile phones */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    body {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+    
+    /* Adjustments for mobile landscape mode */
+    input[type="number"] {
+        width: 40px;
+        font-size: 12px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        margin-top: 5px;
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+}
